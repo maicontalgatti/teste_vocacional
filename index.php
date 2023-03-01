@@ -1,180 +1,81 @@
-<?php
-header('Content-Type: text/html; charset=utf-8');
-date_default_timezone_set('America/Sao_Paulo');
-setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-include("db.php");
-// include("../Db/class.db.php");
-// include("matheval.php");
-// include("../mostrarerros.php");
-# 1. Incluindo a biblioteca CSV
-// require_once './lib/ARQUIVOS/csv.class.php';
-# 2. Incluindo as funções para módulos 
 
-//requires
-// require_once 'fn_graficos.php';
-// require_once 'fn_alarmes.php';
-// require_once 'fn_log_user.php';
-// require_once 'fn_log_lab_ext.php';
-// require_once 'fn_cadastro_usuario.php';
-// require_once 'fn_nivel_dos_tanques.php';
-// require_once 'fn_diferenca_dos_tanques.php';
-// require_once 'fn_grafico_combinado.php';
-// require_once 'fn_grafico_historico.php';
-// require_once 'fn_vazao_supervisorio.php';
-// require_once 'fn_relatorio_dia.php';
-// require_once 'fn_balanca_fluxo.php';
-// require_once 'fn_carregamentos.php';
-// require_once 'fn_descarregamentos.php';
-// require_once 'fn_lancamento.php';
-// require_once 'fn_cadastro_analise.php';
-// require_once 'fn_grafico_analise.php';
-// require_once 'fn_relatorio_diario_analise.php'; 
-// require_once 'fn_horimetros.php';
-// require_once 'fn_cadastro_de_manutencao.php';
-// require_once 'fn_itens_horimetros.php';
-// require_once 'fn_pre_cadastro_manutencao.php';
-// require_once 'fn_itens_pre_cadastro_manutencao.php';
-// require_once 'fn_industrializacao.php';
-// require_once 'fn_perdas_de_hexano.php';
-// require_once 'fn_vazao_grafico_diario.php';
-// require_once 'fn_vazao_grafico_mensal.php';
-// require_once 'fn_vazao_grafico_historico.php';
-// require_once 'fn_produtos_cad_lotes.php';
-// require_once 'fn_produtos_cad_produtos.php';
-// require_once 'fn_relatorio_mensal.php';
-// require_once 'fn_vazao.php';
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Custom styles personal -->
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+<?php
+include("db.php");
+
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Menu">
-    <meta name="modification" content="Maicon Talgatti">
-    <meta name="keyword" content="Menu">
-    <!-- <link rel="shortcut icon" href="../Figuras/favicon.png"> -->
-    <!-- <link class="include" rel="stylesheet" type="text/css" href="dist/jquery.jqplot.min.css" /> -->
-    <!-- <link type="text/css" rel="stylesheet" href="dist/syntaxhighlighter/styles/shCoreDefault.min.css" /> -->
-    <!-- <link type="text/css" rel="stylesheet" href="dist/syntaxhighlighter/styles/shThemejqPlot.min.css" /> -->
-    <!-- <script class="include" type="text/javascript" src="dist/jquery.min.js"></script> -->
-    <title>Teste Vocacional</title>
-    <!-- <script src="js/jquery-3.6.1.min.js"></script> -->
-    <!-- Jquery from Google -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- Bootstrap CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- bootstrap theme -->
-    <!-- <link href="css/bootstrap-theme.css" rel="stylesheet"> -->
-    <!--external css-->
-    <!-- font icon -->
-    <!-- <link href="css/elegant-icons-style.css" rel="stylesheet" /> -->
-    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
-    <!-- Custom styles -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-    <!-- <link href="css/style-responsive.css" rel="stylesheet" /> -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav> -->
 
-    <!-- full calendar css-->
-    <!-- <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" /> -->
-    <!-- <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" /> -->
+    <main role="main" class="container">
 
-    <!-- Custom styles -->
-    <!-- <link rel="stylesheet" href="css/fullcalendar.css"> -->
-    <!-- <link href="css/widgets.css" rel="stylesheet"> -->
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-    <!-- <link href="css/style-responsive.css" rel="stylesheet" /> -->
-    <!-- <link href="css/xcharts.min.css" rel=" stylesheet"> -->
-    <!-- <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet"> -->
+      <div class="starter-template">
+        <h1 class="align_center">Bootstrap starter template</h1>
+        <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
 
-    <!-- <script src="/Formas/jquery-validation-1.19.3/dist/jquery.validate.js"></script> -->
-    <!-- <script src="https://cdn.amcharts.com/lib/4/core.js"></script> -->
-    <!-- <script src="https://cdn.amcharts.com/lib/4/charts.js"></script> -->
-    <!-- <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script> -->
+    </main><!-- /.container -->
 
-    <!-- <link rel="stylesheet" href="css/index_min.css"> -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-
-</head>
-<script>
-    // var aux_disable_button = 0;
-    // var editando_ou_nao = 0;
-    // var auto_inc = 0;
-    // var num_hr_edtx = 0;
-    // var num_of_horario = 0;
-</script>
-<style>
-</style>
-
-<body>
-    <?php
-
-
-
-$servername = "52.67.79.110";
-$username = "maicon";
-$password = "focoforcaefe";
-$dbname = "teste_vocacional";
-//http://intranet.ampla.ind.br/phpmyadmin/
-// include "mostrarerros.php";
-
-//$conn= mysqli_connect($servername, $username, $password, $dbname);
-//$conn_oo = new mysqli($servername, $username, $password, $dbname);
-$con = mysqli_connect($servername, $username, $password, $dbname);
-$con2 = mysqli_connect($servername, $username, $password, $dbname);
-
-
-    $sql = "SELECT * FROM user_tv";
-    $result = mysqli_query($con, $sql);
-    while ($row = mysqli_fetch_array($result)) {
-        echo 'nome ' . $row[''] . '<br>';
-    }
-
-    // $servername = "52.67.79.110";
-    // $username = "maicon";
-    // $password = "focoforcaefe";
-    // $dbname = "teste_vocacional";
-
-    // // Create connection
-    // $conn = mysqli_connect($servername, $username, $password, $dbname);
-    // // Check connection
-    // if (!$conn) {
-    //   die("Connection failed: " . mysqli_connect_error());
-    // }
-
-    // $sql = "SELECT * FROM user_tv";
-    // $result = mysqli_query($conn, $sql);
-
-    // if (mysqli_num_rows($result) > 0) {
-    //   // output data of each row
-    //   while($row = mysqli_fetch_row ($result)) {
-    //     echo "id: " . $row["id"]. " - Name: " . $row["nome"]. " <br>";
-    //   }
-    // } else {
-    //   echo "0 results";
-    // }
-
-    // mysqli_close($conn);
-
-
-
-    // $conn = OpenCon();
-    // if ($conn) {
-    //     echo "Connected Successfully";
-    // };
-
-
-
-    // // $sql = mysqli_query($conn, "SELECT * FROM user_tv");
-    // $sql = "SELECT * FROM user_tv";
-
-    // $result = $conn->query($sql);
-
-    // while ($row = $result->fetch_assoc()) {
-    //     echo "nome: " . $row["nome"];
-    // };
-    // CloseCon($conn);
-
-
-    ?>
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
