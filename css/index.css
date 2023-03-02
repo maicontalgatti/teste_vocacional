@@ -9,7 +9,7 @@
 }
 
 .img_back{
-    background-image: url("../img/acesso-fundo.jpg"); 
+    /* background-image: url("../img/acesso-fundo.jpg");  */
 }
  
 .p_text{
@@ -24,4 +24,5 @@ td{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+   
 }
