@@ -131,12 +131,12 @@ $valor_c = $valor_c + $teste_48;
  
 
 $array = array(
-	array( 'nome' => 'valor_r',	'valor' => $valor_r ),
-	array( 'nome' => 'valor_i',	'valor' => $valor_i ),
-	array( 'nome' => 'valor_a',	'valor' => $valor_a ),
-	array( 'nome' => 'valor_s',	'valor' => $valor_s ),
-	array( 'nome' => 'valor_e',	'valor' => $valor_e ),
-	array( 'nome' => 'valor_c',	'valor' => $valor_c )
+	array( 'nome' => 'valor_r',	'valor' => $valor_r, 'nome_completo' => 'Empreendedor' ),
+	array( 'nome' => 'valor_i',	'valor' => $valor_i, 'nome_completo' => 'Investigativo' ),
+	array( 'nome' => 'valor_a',	'valor' => $valor_a, 'nome_completo' => 'Artístico' ),
+	array( 'nome' => 'valor_s',	'valor' => $valor_s, 'nome_completo' => 'Social' ),
+	array( 'nome' => 'valor_e',	'valor' => $valor_e, 'nome_completo' => 'Empreendedor' ),
+	array( 'nome' => 'valor_c',	'valor' => $valor_c, 'nome_completo' => 'Convencional' )
 );
 
 // Compara se $a é maior que $b
@@ -148,14 +148,14 @@ function cmp($a, $b) {
 usort($array, 'cmp');
 
 // Mostra os valores
-// echo '<pre>';
-// print_r( $array );
-// echo '</pre>';
+    // echo '<pre>';
+    // print_r( $array );
+    // echo '</pre>';
 
-// mostra os top 3
- 
-// mysqli_set_charset($conn, "utf8");
-// mysqli_error($conn);
+    // mostra os top 3
+    
+    // mysqli_set_charset($conn, "utf8");
+    // mysqli_error($conn);
 
 if ($conn) {
     $sql = "INSERT INTO teste_tv (name, email, celular, realista, investigativo, artitico, social, empreendedor, convencional) VALUES('".$nome_aluno."', '".$email."', ".$celular.",".$valor_r.", ".$valor_i.", ".$valor_a.", ".$valor_s.", ".$valor_e.", ".$valor_c.")";
@@ -164,9 +164,7 @@ if ($conn) {
     echo "errou <br>";
 }
 ?>
-
-
-
+ 
 <!doctype html>
 <html lang="pt">
 
@@ -235,18 +233,16 @@ if ($conn) {
     <div class="starter-template bloco_principal align_center">
       <form method="POST" action="teste.php">
         <h1 class="align_center">Resultado:</h1>
-        <p class="align_center"><?php echo $array[0][0] ?> </p> 
+        <p class="align_center"><?php print_r($array[0]['nome_completo'])?> : <?php print_r($array[0]['valor']) ?> </p> 
+        <p class="align_center"><?php print_r($array[1]['nome_completo'])?> : <?php print_r($array[1]['valor']) ?> </p> 
+        <p class="align_center"><?php print_r($array[2]['nome_completo'])?> : <?php print_r($array[2]['valor']) ?> </p> 
+        <p class="align_center"><?php print_r($array[3]['nome_completo'])?> : <?php print_r($array[3]['valor']) ?> </p> 
+        <p class="align_center"><?php print_r($array[4]['nome_completo'])?> : <?php print_r($array[4]['valor']) ?> </p> 
+        <p class="align_center"><?php print_r($array[5]['nome_completo'])?> : <?php print_r($array[5]['valor']) ?> </p>  
         <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
       </form>
     </div>
-
-
-
-
-
-
-
-
+  
   </main><!-- /.container -->
 
   <!-- Bootstrap core JavaScript
