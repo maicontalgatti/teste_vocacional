@@ -1,3 +1,27 @@
 .align_center{
     text-align: center;    
 }
+
+.bloco_principal{
+    border: black solid 1px;
+    background-color: white;
+  
+}
+
+.img_back{
+    background-image: url("../img/acesso-fundo.jpg"); 
+}
+ 
+.p_text{
+    font-size: 1rem;
+}
+ 
+td{
+    border: black solid 1px;
+}
+
+#tabela_teste{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
