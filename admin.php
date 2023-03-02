@@ -1,5 +1,3 @@
-
- 
 <!doctype html>
 <html lang="pt">
 
@@ -10,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-  <title>Starter Template for Bootstrap</title>
+  <title>Teste Vocacional</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -31,15 +29,18 @@
   ?>
   <main role="main" class="container">
 
+
     <div class="starter-template bloco_principal align_center">
-      <form method="POST" action="teste.php">
-        <h1 class="align_center">Resultado:</h1>
-        
-        <p class="align_center"><?php print_r($array[5]['nome_completo'])?> : <?php print_r($array[5]['valor']) ?> </p>  
-        <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
-      </form>
+      <!-- <form method="POST" action="teste.php"> -->
+      <h1 class="align_center">Nome:</h1>
+      <input type="text" name='nome' class="align_center"><br>
+      <h1 class="align_center">Senha:</h1>
+      <input type="text" name='senha' class="align_center"><br>
+      <input type="button" class="align_center" value="Entrar" onclick="valida_login()">
+      <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
+      <!-- </form> -->
     </div>
-  
+
   </main><!-- /.container -->
 
   <!-- Bootstrap core JavaScript
@@ -53,4 +54,9 @@
   <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 
+<script>
+  function valida_login() {
+    alert('oi');
+  }
+</script>
 </html>
