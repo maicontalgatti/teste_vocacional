@@ -31,14 +31,9 @@
 
 
     <div class="starter-template bloco_principal align_center">
-      <form method="POST" action="valida_login.php">
-        <h1 class="align_center">Nome:</h1>
-        <input type="text" name='nome' class="align_center"><br>
-        <h1 class="align_center">Senha:</h1>
-        <input type="text" name='senha' class="align_center"><br>
-        <input type="submit" class="align_center" value="Entrar">
-        <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
-      </form>
+
+      <h1 class="align_center">Bem vindo Professor!</h1> 
+
     </div>
 
   </main><!-- /.container -->
@@ -55,11 +50,9 @@
 </body>
 
 <script>
-  var params = new URLSearchParams(window.location.search);
-  var erro = params.get('erro'); 
-  if (erro = 'senhaincorreta') {
-    alert('Login Inválido');
-  };
-</script>
+    
 
+
+
+</script>
 </html>
