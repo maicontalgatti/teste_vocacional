@@ -32,9 +32,49 @@
 
     <div class="starter-template bloco_principal align_center">
 
-      <h1 class="align_center">Bem vindo Professor!</h1> 
+      <h1 class="align_center">Bem vindo Professor!</h1>
 
-      <button id="btn-cadastro">Cadastrar</button>
+      <button id="btn-cadastro">Cadastrar nova escola</button>
+
+      <div>
+
+        <?php
+        // Consulta SQL para selecionar os dados
+        $sql = "SELECT nome, codigo FROM escola_tv";
+        $result = $conn->query($sql);
+
+        // Verifica se há resultados
+        if ($result->num_rows > 0) {
+          echo "<table>";
+          echo "<tr>"; 
+          echo "<th>escola</th>";
+          echo "<th>link</th>";
+          echo "</tr>";
+          // Loop para percorrer os resultados e exibi-los na tabela
+          while ($row = $result->fetch_assoc()) {
+            echo "<tr>"; 
+            echo "<td>" . $row["nome"] . "</td>";
+            echo "<td> <a>teste.php?codigo=".$row["codigo"] ."</a> </td>";
+
+            echo "</tr>";
+          }
+          echo "</table>";
+        } else {
+          echo "Não há resultados.";
+        }
+        // Fecha a conexão com o banco de dados
+        $conn->close();
+
+        ?>
+
+      </div>
+
+
+
+
+
+
+
 
 
     </div>
@@ -45,13 +85,13 @@
         <form class="align_center" method="post" action="cadastra_escola.php">
           <label for="escola">Escola:</label>
           <input type="text" id="escola" name="escola" required>
-<bR>
+          <bR>
           <label for="cidade">Cidade:</label>
           <input type="text" id="cidade" name="cidade" required>
-<br>
+          <br>
           <label for="estado">Estado:</label>
           <input type="text" id="estado" name="estado" required>
-<br>
+          <br>
           <input type="submit" value="cadastrar">
         </form>
       </div>
@@ -71,29 +111,26 @@
   <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 
-<script> 
+<script>
+  //modal
 
-//modal
+  var btnCadastro = document.getElementById("btn-cadastro");
+  var modalCadastro = document.getElementById("modal-cadastro");
+  var closeModal = document.getElementsByClassName("close")[0];
 
-var btnCadastro = document.getElementById("btn-cadastro");
-var modalCadastro = document.getElementById("modal-cadastro");
-var closeModal = document.getElementsByClassName("close")[0];
+  btnCadastro.onclick = function() {
+    modalCadastro.style.display = "block";
+  }
 
-btnCadastro.onclick = function() {
-  modalCadastro.style.display = "block";
-}
+  closeModal.onclick = function() {
+    modalCadastro.style.display = "none";
+  }
 
-closeModal.onclick = function() {
-  modalCadastro.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modalCadastro) {
-    modalCadastro.style.display = "none";
-  }
-}
-
-
+  window.onclick = function(event) {
+    if (event.target == modalCadastro) {
+      modalCadastro.style.display = "none";
+    }
+  }
 </script>
 
 </html>
