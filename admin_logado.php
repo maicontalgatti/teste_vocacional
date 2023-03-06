@@ -34,7 +34,29 @@
 
       <h1 class="align_center">Bem vindo Professor!</h1> 
 
+      <button id="btn-cadastro">Cadastrar</button>
+
+
     </div>
+    <div class="modal" id="modal-cadastro">
+      <div class="modal-content ">
+        <span class="close">&times;</span>
+        <h2 class="align_center">Formulário de Cadastro</h2>
+        <form class="align_center" method="post" action="cadastra_escola.php">
+          <label for="escola">Escola:</label>
+          <input type="text" id="escola" name="escola" required>
+<bR>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+<br>
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required>
+<br>
+          <input type="submit" value="cadastrar">
+        </form>
+      </div>
+    </div>
+
 
   </main><!-- /.container -->
 
@@ -49,10 +71,29 @@
   <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
 
-<script>
-    
+<script> 
 
+//modal
+
+var btnCadastro = document.getElementById("btn-cadastro");
+var modalCadastro = document.getElementById("modal-cadastro");
+var closeModal = document.getElementsByClassName("close")[0];
+
+btnCadastro.onclick = function() {
+  modalCadastro.style.display = "block";
+}
+
+closeModal.onclick = function() {
+  modalCadastro.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalCadastro) {
+    modalCadastro.style.display = "none";
+  }
+}
 
 
 </script>
+
 </html>
