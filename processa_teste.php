@@ -53,6 +53,7 @@ $teste_48 = $_POST["teste_48"];
 $nome_aluno = $_POST["nome_aluno"];
 $celular = $_POST["celular"];
 $email = $_POST["email"];
+$email = $_POST["codigo"];
 
 
 // R - Realista
