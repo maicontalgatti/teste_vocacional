@@ -53,7 +53,7 @@ $teste_48 = $_POST["teste_48"];
 $nome_aluno = $_POST["nome_aluno"];
 $celular = $_POST["celular"];
 $email = $_POST["email"];
-$email = $_POST["codigo"];
+$codigoescola = $_POST["codigo"];
 
 
 // R - Realista
@@ -159,7 +159,7 @@ usort($array, 'cmp');
     // mysqli_error($conn);
 
 if ($conn) {
-    $sql = "INSERT INTO teste_tv (name, email, celular, realista, investigativo, artitico, social, empreendedor, convencional) VALUES('".$nome_aluno."', '".$email."', ".$celular.",".$valor_r.", ".$valor_i.", ".$valor_a.", ".$valor_s.", ".$valor_e.", ".$valor_c.")";
+    $sql = "INSERT INTO teste_tv (name_aluno, email, celular, realista, investigativo, artitico, social, empreendedor, convencional,codigoescola) VALUES('".$nome_aluno."', '".$email."', ".$celular.",".$valor_r.", ".$valor_i.", ".$valor_a.", ".$valor_s.", ".$valor_e.", ".$valor_c.", '".$codigoescola."')";
     $query = mysqli_query($conn, $sql);
 } else {
     echo "errou <br>";

@@ -54,7 +54,7 @@
           while ($row = $result->fetch_assoc()) {
             echo "<tr>"; 
             echo "<td>" . $row["nome"] . "</td>";
-            echo "<td> <a>teste.php?codigo=".$row["codigo"] ."</a> </td>";
+            echo "<td> <a id='".$row["codigo"] ."' onclick='copyLink(id)'>index.php?codigo=".$row["codigo"] ."</a> </td>";
 
             echo "</tr>";
           }
@@ -66,6 +66,12 @@
         $conn->close();
 
         ?>
+
+
+<!-- <p>Este é o link que você deseja copiar:</p>
+    <p id="link">https://www.example.com</p>
+    <button onclick="copyLink()">Copiar link</button> -->
+
 
       </div>
 
@@ -131,6 +137,40 @@
       modalCadastro.style.display = "none";
     }
   }
+
+
+
+
+  function copyLink(link) {
+        // Seleciona o elemento com o id "link"
+        const linkElement = "localhost:81/index.php?codigo="+link;
+        
+        // Seleciona o texto do link
+        // const linkText = linkElement.innerText;
+        const linkText = linkElement;
+        
+        // Cria um elemento de texto temporário
+        const tempElement = document.createElement("textarea");
+        
+        // Define o valor do elemento de texto temporário para o texto do link
+        tempElement.value = linkText;
+        
+        // Adiciona o elemento de texto temporário à página
+        document.body.appendChild(tempElement);
+        
+        // Seleciona o texto no elemento de texto temporário
+        tempElement.select();
+        
+        // Copia o texto selecionado para a área de transferência
+        document.execCommand("copy");
+        
+        // Remove o elemento de texto temporário da página
+        document.body.removeChild(tempElement);
+        
+        // Exibe uma mensagem de sucesso
+        alert("Link copiado para a área de transferência!");
+      }
+
 </script>
 
 </html>

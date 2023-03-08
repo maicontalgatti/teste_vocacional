@@ -241,7 +241,7 @@
                 </table><bR>
                 <input type="text" hidden="hidden" name="nome_aluno" value="<?php echo $_POST['nome_aluno'] ?>">
                 <input type="text" name="email" placeholder="Email@email.com" >
-                <input type="text" hidden="hidden" name="codigo" value="<?php echo $_GET['codigo'] ?>">
+                <input type="text" hidden="hidden" name="codigo" value="<?php echo $_POST['codigo'] ?>">
                 <input type="number" name="celular" placeholder="(ddd) 9999 9999" >
                 <input type="submit" value="enviar">
                 <br>

@@ -67,6 +67,7 @@
       <form method="POST" action="teste.php">
         <h1 class="align_center">Nome:</h1>
         <input type="text" name='nome_aluno' class="align_center"><br>
+        <input type="text" name='codigo' hidden="hidden" class="align_center" value="<?php echo $_GET['codigo']?>"><br>
         <input type="submit" class="align_center" value="Iniciar">
         <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
       </form>
