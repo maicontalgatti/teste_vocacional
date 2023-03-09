@@ -53,7 +53,7 @@
           // Loop para percorrer os resultados e exibi-los na tabela
           while ($row = $result->fetch_assoc()) {
             echo "<tr>"; 
-            echo "<td>" . $row["nome"] . "</td>";
+            echo "<td><a href='lista_resultados.php?codigo=".$row["codigo"] ."'>" . $row["nome"] . "</a></td>";
             echo "<td> <a id='".$row["codigo"] ."' onclick='copyLink(id)'>index.php?codigo=".$row["codigo"] ."</a> </td>";
 
             echo "</tr>";
