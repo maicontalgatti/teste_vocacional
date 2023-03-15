@@ -57,7 +57,7 @@ $codigoescola = $_POST["codigo"];
 
 
 // R - Realista
-$valor_r = 0;
+$valor_r = 0; 
 $valor_r = $valor_r + $teste_1;
 $valor_r = $valor_r + $teste_7;
 $valor_r = $valor_r + $teste_13;
