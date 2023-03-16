@@ -1,6 +1,4 @@
 <?php 
-
-
 include("db.php");
 include("mostrarerros.php");
 
@@ -19,9 +17,10 @@ if (mysqli_num_rows($query) > 0) {
         echo "Usuário ou senha inválidos!";
         Header('Location: admin.php?erro=senhaincorreta');
     }
-
-
-
 } else {
     echo "errou <br>";
 }
+
+
+
+?>

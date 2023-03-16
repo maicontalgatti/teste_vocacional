@@ -8,4 +8,4 @@ $banco = "teste_vocacional";
 
 $conn = mysqli_connect($endereco, $user, $senha, $banco);
 
-    ?>
+?>
