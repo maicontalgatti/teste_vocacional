@@ -9,8 +9,8 @@
 }
 
 .img_back{
-    /* background-image: url("../img/acesso-fundo.jpg");  */
-    background-color: #000;
+    background-image: url("../img/acesso-fundo.jpg"); 
+    /* background-color: #000; */
 }
  
 .p_text{

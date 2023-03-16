@@ -48,201 +48,638 @@
                 <table id="tabela_teste" style="width:80%">
                     <tr>
                         <td> 1. Trabalhar com ferramentas ou máquinas.</td>
-                        <td><input type='text' name='teste_1'></td>
+                        <td><select name='teste_1'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 2. Realizar pesquisas.</td>
-                        <td><input type='text' name='teste_2'></td>
+                        <td><select name='teste_2'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 3. Desenhar ou pintar quadros.</td>
-                        <td><input type='text' name='teste_3'></td>
+                        <td><select name='teste_3'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 4. Trabalhar com pessoas que necessitem de auxílio.</td>
-                        <td><input type='text' name='teste_4'></td>
+                        <td><select name='teste_4'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 5. Investir em negócio promissor de alto risco.</td>
-                        <td><input type='text' name='teste_5'></td>
+                        <td><select name='teste_5'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 6. Controlar os estoques em uma loja.</td>
-                        <td><input type='text' name='teste_6'></td>
+                        <td><select name='teste_6'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 7. Montar aparelhos ou objetos.</td>
-                        <td><input type='text' name='teste_7'></td>
+                        <td><select name='teste_7'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 8. Estudar o modo de viver em diferentes culturas.</td>
-                        <td><input type='text' name='teste_8'></td>
+                        <td><select name='teste_8'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 9. Fazer trabalhos que requeiram expressão das emoções.</td>
-                        <td><input type='text' name='teste_9'></td>
+                        <td><select name='teste_9'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 10. Desenvolver trabalhos voluntários.</td>
-                        <td><input type='text' name='teste_10'></td>
+                        <td><select name='teste_10'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 11. Desempenhar tarefas em que possa comandar um grupo de pessoas.</td>
-                        <td><input type='text' name='teste_11'></td>
+                        <td><select name='teste_11'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 12. Lidar com papéis em um escritório.</td>
-                        <td><input type='text' name='teste_12'></td>
+                        <td><select name='teste_12'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 13. Construir ou reformar coisas.</td>
-                        <td><input type='text' name='teste_13'></td>
+                        <td><select name='teste_13'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 14. Buscar explicações para fenômenos naturais ou sociais.</td>
-                        <td><input type='text' name='teste_14'></td>
+                        <td><select name='teste_14'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 15. Criar programas para TV ou jornal.</td>
-                        <td><input type='text' name='teste_15'></td>
+                        <td><select name='teste_15'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 16. Trabalhar para promover o bem-estar das pessoas.</td>
-                        <td><input type='text' name='teste_16'></td>
+                        <td><select name='teste_16'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 17. Tentar convencer as pessoas sobre alguma coisa ou ideia.</td>
-                        <td><input type='text' name='teste_17'></td>
+                        <td><select name='teste_17'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 18. Organizar a agenda de horários de um executivo.</td>
-                        <td><input type='text' name='teste_18'></td>
+                        <td><select name='teste_18'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 19. Fazer coisas que requeiram uso de instrumentos e habilidades mecânicas.</td>
-                        <td><input type='text' name='teste_19'></td>
+                        <td><select name='teste_19'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 20. Estudar as origens do universo.</td>
-                        <td><input type='text' name='teste_20'></td>
+                        <td><select name='teste_20'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 21. Trabalhar com fotografia e vídeo.</td>
-                        <td><input type='text' name='teste_21'></td>
+                        <td><select name='teste_21'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 22. Cuidar de pessoas.</td>
-                        <td><input type='text' name='teste_22'></td>
+                        <td><select name='teste_22'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 23. Fazer coisas que exijam argumentação e debate.</td>
-                        <td><input type='text' name='teste_23'></td>
+                        <td><select name='teste_23'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 24. Trabalhar com números e registros de uma maneira ordenada.</td>
-                        <td><input type='text' name='teste_24'></td>
+                        <td><select name='teste_24'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 25. Construir coisas que sejam úteis para o dia a dia.</td>
-                        <td><input type='text' name='teste_25'></td>
+                        <td><select name='teste_25'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 26. Descobrir como funciona a mente humana.</td>
-                        <td><input type='text' name='teste_26'></td>
+                        <td><select name='teste_26'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 27. Cantar ou tocar instrumentos musicais.</td>
-                        <td><input type='text' name='teste_27'></td>
+                        <td><select name='teste_27'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 28. Realizar atividades em que possa ensinar algo aos outros.</td>
-                        <td><input type='text' name='teste_28'></td>
+                        <td><select name='teste_28'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 29. Exercer cargos de liderança.</td>
-                        <td><input type='text' name='teste_29'></td>
+                        <td><select name='teste_29'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 30. Executar tarefas rotineiras.</td>
-                        <td><input type='text' name='teste_30'></td>
+                        <td><select name='teste_30'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 31. Fazer trabalhos que exijam atividade física.</td>
-                        <td><input type='text' name='teste_31'></td>
+                        <td><select name='teste_31'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 32. Examinar as causas das mudanças que ocorrem na sociedade.</td>
-                        <td><input type='text' name='teste_32'></td>
+                        <td><select name='teste_32'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 33. Produzir coisas bonitas de se ver ou assistir.</td>
-                        <td><input type='text' name='teste_33'></td>
+                        <td><select name='teste_33'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 34. Executar tarefas que exijam contato humano.</td>
-                        <td><input type='text' name='teste_34'></td>
+                        <td><select name='teste_34'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 35. Lidar com atividades que exijam negociação.</td>
-                        <td><input type='text' name='teste_35'></td>
+                        <td><select name='teste_35'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 36. Organizar arquivos.</td>
-                        <td><input type='text' name='teste_36'></td>
+                        <td><select name='teste_36'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 37. Fazer trabalhos manuais.</td>
-                        <td><input type='text' name='teste_37'></td>
+                        <td><select name='teste_37'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 38. Discutir temas científicos com outras pessoas.</td>
-                        <td><input type='text' name='teste_38'></td>
+                        <td><select name='teste_38'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 39. Planejar a decoração de um ambiente.</td>
-                        <td><input type='text' name='teste_39'></td>
+                        <td><select name='teste_39'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 40. Trabalhar com orientação de pessoas, assistência física ou mental.</td>
-                        <td><input type='text' name='teste_40'></td>
+                        <td><select name='teste_40'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 41. Gerenciar um negócio próprio.</td>
-                        <td><input type='text' name='teste_41'></td>
+                        <td><select name='teste_41'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 42. Trabalhar no caixa de um banco ou loja.</td>
-                        <td><input type='text' name='teste_42'></td>
+                        <td><select name='teste_42'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 43. Consertar utensílios domésticos.</td>
-                        <td><input type='text' name='teste_43'></td>
+                        <td><select name='teste_43'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 44. Ler trabalhos de filósofos ou outros intelectuais.</td>
-                        <td><input type='text' name='teste_44'></td>
+                        <td><select name='teste_44'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 45. Dirigir um filme ou peça de teatro.</td>
-                        <td><input type='text' name='teste_45'></td>
+                        <td><select name='teste_45'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 46. Realizar atividades que ajudem a melhorar a sociedade de algum modo.</td>
-                        <td><input type='text' name='teste_46'></td>
+                        <td><select name='teste_46'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 47. Fazer coisas que exijam ambição.</td>
-                        <td><input type='text' name='teste_47'></td>
+                        <td><select name='teste_47'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                     <tr>
                         <td> 48. Seguir uma rotina no trabalho.</td>
-                        <td><input type='text' name='teste_48'></td>
+                        <td><select name='teste_48'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4" selected>4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </td>
                     </tr>
                 </table><bR>
                 <input type="text" hidden="hidden" name="nome_aluno" value="<?php echo $_POST['nome_aluno'] ?>">
-                <input type="email" name="email" placeholder="Email@email.com" required>
                 <input type="text" hidden="hidden" name="codigo" value="<?php echo $_POST['codigo'] ?>" >
+
+                <label>Insira seu email</label><bR>
+                <input type="email" name="email" placeholder="Email@email.com" required><bR>
+                <label>Insira seu numero de celular (Whatsapp)</label><bR>
                 <input type="number" name="celular" placeholder="(ddd) 9999 9999" required>
+                <br>
+                <br>
                 <input type="submit" value="enviar">
                 <br>
             </form>
