@@ -45,7 +45,7 @@ if ($_SESSION["login"] == "true") {
 
           <?php
           // Consulta SQL para selecionar os dados
-          $sql = "SELECT nome, codigo FROM escola_tv";
+          $sql = "SELECT nome, codigo FROM escola_tv order by id DESC";
           $result = $conn->query($sql);
 
           // Verifica se há resultados
@@ -156,8 +156,7 @@ if ($_SESSION["login"] == "true") {
     }
 
     function sair() {
-      <?php
-      session_start();
+      <?php 
       $_SESSION["login"] = "false";
       session_destroy();
       ?>

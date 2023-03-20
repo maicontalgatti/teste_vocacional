@@ -28,7 +28,7 @@ for ($i = 0; $i < 8; $i++) {
 // echo $randomString;
 $codigo = $randomString;
 
-$escola = $ano + ' - ' + $escola + ' - ' + $turma;
+$escola = $ano . ' - ' . $escola . ' - ' . $turma;
 
 if ($conn) {
     $sql = "INSERT INTO teste_vocacional.escola_tv (nome, cidade, estado, codigo) VALUES('".$escola."', '".$cidade."', '".$estado."', '".$codigo."')";
