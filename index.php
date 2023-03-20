@@ -26,6 +26,23 @@
   <?php
   include("db.php");
 
+  $sql = "SELECT codigo FROM escola_tv";
+  $result = $conn->query($sql);
+  $codigos_arr = [];
+  $i = 0;
+  // Verifica se há resultados
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      $codigos_arr[$i] = $row['codigo'];
+      $i++;
+    }
+  } else {
+  }
+  // Fecha a conexão com o banco de dados
+  $conn->close();
+  //  var_dump($codigos_arr)
+
+
   ?>
 
   <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -66,9 +83,11 @@
     <div class="starter-template bloco_principal align_center">
       <form method="POST" action="teste.php">
         <h1 class="align_center">Nome:</h1>
-        <input type="text" name='nome_aluno' class="align_center"><br>
-        <input type="text" name='codigo' hidden="hidden" class="align_center" value="<?php echo $_GET['codigo']?>"><br>
-        <input type="submit" class="align_center" value="Iniciar">
+        <input type="text" name='nome_aluno' class="align_center" required><br>
+        <h1 class="align_center">Codigo escola:</h1>
+        <input type="text" name='codigo' id='codigo' class="align_center" required><br>
+        <input type="button" class="align_center" value="Iniciar" onclick="teste_codigo_escola()">
+
         <!-- <p class="lead align_center">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
       </form>
     </div>
@@ -82,6 +101,21 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
+    function teste_codigo_escola() {
+      
+      array_codigos = <?php echo json_encode($codigos_arr) ?>;
+      valor_testado = document.getElementById('codigo').value;
+      console.log(array_codigos);
+      console.log(valor_testado);
+      if (array_codigos.indexOf(valor_testado) > -1) {
+        alert("Encontrou");
+      } else {
+        alert("Não encontrou");
+      }
+    }
+
+
+
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
   <script src="../../assets/js/vendor/popper.min.js"></script>

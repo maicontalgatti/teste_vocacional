@@ -5,8 +5,10 @@ include("db.php");
 include("mostrarerros.php");
 
 $escola = $_POST['escola'];
-$cidade = $_POST['cidade'];
+$ano = $_POST['ano'];
+$turma = $_POST['turma'];
 $estado = $_POST['estado'];
+$cidade = $_POST['cidade'];
 
 // echo '$escola: '.$escola.'<br>';
 // echo '$cidade: '.$cidade.'<br>';
@@ -14,7 +16,7 @@ $estado = $_POST['estado'];
 $bytes = random_bytes(4);
 $code = bin2hex($bytes);
 
-$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+$characters = '0123456789';
 $charactersLength = strlen($characters);
 $randomString = '';
 
@@ -25,6 +27,8 @@ for ($i = 0; $i < 8; $i++) {
 
 // echo $randomString;
 $codigo = $randomString;
+
+$escola = $ano + ' - ' + $escola + ' - ' + $turma;
 
 if ($conn) {
     $sql = "INSERT INTO teste_vocacional.escola_tv (nome, cidade, estado, codigo) VALUES('".$escola."', '".$cidade."', '".$estado."', '".$codigo."')";

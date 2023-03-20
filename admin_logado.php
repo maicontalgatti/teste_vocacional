@@ -46,16 +46,17 @@
         // Verifica se há resultados
         if ($result->num_rows > 0) {
           echo "<table>";
-          echo "<tr>"; 
+          echo "<tr>";
           echo "<th>escola</th>";
-          echo "<th>link</th>";
+          echo "<th>Codigo escola</th>";
+          // echo "<th>link</th>";
           echo "</tr>";
           // Loop para percorrer os resultados e exibi-los na tabela
           while ($row = $result->fetch_assoc()) {
-            echo "<tr>"; 
-            echo "<td><a href='lista_resultados.php?codigo=".$row["codigo"] ."'>" . $row["nome"] . "</a></td>";
-            echo "<td> <a id='".$row["codigo"] ."' onclick='copyLink(id)'>index.php?codigo=".$row["codigo"] ."</a> </td>";
-
+            echo "<tr>";
+            echo "<td><a href='lista_resultados.php?codigo=" . $row["codigo"] . "'>" . $row["nome"] . "</a></td>";
+            echo "<td>" . $row["codigo"] . " </td>";
+            // echo "<td> <a id='".$row["codigo"] ."' onclick='copyLink(id)'>index.php?codigo=".$row["codigo"] ."</a> </td>";
             echo "</tr>";
           }
           echo "</table>";
@@ -68,21 +69,11 @@
         ?>
 
 
-<!-- <p>Este é o link que você deseja copiar:</p>
+        <!-- <p>Este é o link que você deseja copiar:</p>
     <p id="link">https://www.example.com</p>
     <button onclick="copyLink()">Copiar link</button> -->
-
-
-      </div>
-
-
-
-
-
-
-
-
-
+ 
+      </div>  
     </div>
     <div class="modal" id="modal-cadastro">
       <div class="modal-content ">
@@ -92,11 +83,27 @@
           <label for="escola">Escola:</label>
           <input type="text" id="escola" name="escola" required>
           <bR>
-          <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" name="cidade" required>
+          <label for="ano">Ano:</label>
+          <select name='ano'>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+          <br>
+          <label for="turma">Turma:</label>
+          <input type="text" id="turma" name="turma" required>
           <br>
           <label for="estado">Estado:</label>
           <input type="text" id="estado" name="estado" required>
+          <br>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
           <br>
           <input type="submit" value="cadastrar">
         </form>
@@ -143,35 +150,40 @@
 
 
   function copyLink(link) {
-        // Seleciona o elemento com o id "link"
-        const linkElement = "localhost:81/index.php?codigo="+link;
-        
-        // Seleciona o texto do link
-        // const linkText = linkElement.innerText;
-        const linkText = linkElement;
-        
-        // Cria um elemento de texto temporário
-        const tempElement = document.createElement("textarea");
-        
-        // Define o valor do elemento de texto temporário para o texto do link
-        tempElement.value = linkText;
-        
-        // Adiciona o elemento de texto temporário à página
-        document.body.appendChild(tempElement);
-        
-        // Seleciona o texto no elemento de texto temporário
-        tempElement.select();
-        
-        // Copia o texto selecionado para a área de transferência
-        document.execCommand("copy");
-        
-        // Remove o elemento de texto temporário da página
-        document.body.removeChild(tempElement);
-        
-        // Exibe uma mensagem de sucesso
-        alert("Link copiado para a área de transferência!");
-      }
+    // Seleciona o elemento com o id "link"
+    const linkElement = "localhost:81/index.php?codigo=" + link;
 
+    // Seleciona o texto do link
+    // const linkText = linkElement.innerText;
+    const linkText = linkElement;
+
+    // Cria um elemento de texto temporário
+    const tempElement = document.createElement("textarea");
+
+    // Define o valor do elemento de texto temporário para o texto do link
+    tempElement.value = linkText;
+
+    // Adiciona o elemento de texto temporário à página
+    document.body.appendChild(tempElement);
+
+    // Seleciona o texto no elemento de texto temporário
+    tempElement.select();
+
+    // Copia o texto selecionado para a área de transferência
+    document.execCommand("copy");
+
+    // Remove o elemento de texto temporário da página
+    document.body.removeChild(tempElement);
+
+    // Exibe uma mensagem de sucesso
+    alert("Link copiado para a área de transferência!");
+  }
+
+
+  function imprime_resultado(codigo) {
+
+    window.open('teste_por_escola.php?codigo=' + codigo + ', width=1200,height=800,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');
+  }
 </script>
 
 </html>
