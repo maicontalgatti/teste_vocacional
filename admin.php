@@ -57,9 +57,9 @@
 <script>
   var params = new URLSearchParams(window.location.search);
   var erro = params.get('erro'); 
-  if (erro = 'senhaincorreta') {
-    alert('Login Inválido');
-  };
+  // if (erro = 'senhaincorreta') {
+  //   alert('Login Inválido');
+  // };
 </script>
 
 </html>

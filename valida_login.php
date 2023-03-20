@@ -10,11 +10,13 @@ if ($conn) {
 if (mysqli_num_rows($query) > 0) {
         //O login foi bem sucedido
        echo "Login bem sucedido!";
-
+       session_start();
+       $_SESSION["login"] = "true";
        Header('Location: admin_logado.php');
     } else {
         //O login falhou
         echo "Usuário ou senha inválidos!";
+        $_SESSION["login"] = "false";
         Header('Location: admin.php?erro=senhaincorreta');
     }
 } else {
