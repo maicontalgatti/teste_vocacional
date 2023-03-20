@@ -156,9 +156,11 @@ if ($_SESSION["login"] == "true") {
     }
 
     function sair() {
-      <?php 
+      <?php
+      session_start();
+      $_SESSION["login"] = "false";
       session_destroy();
-?>
+      ?>
       window.location.href = "admin.php";
 
     }

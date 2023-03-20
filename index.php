@@ -72,7 +72,12 @@
       console.log(valor_testado);
       if (array_codigos.indexOf(valor_testado) > -1) {
         // alert("Encontrou"); 
+        <?php
+         session_start();
+        $_SESSION['codigo'] = 'true';
+        ?>
         window.location.href = "teste.php";
+        
       } else {
         alert("Código de escola incorreto");
       }

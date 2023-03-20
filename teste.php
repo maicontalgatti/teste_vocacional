@@ -1,3 +1,9 @@
+
+<?php
+         session_start();
+        if($_SESSION['codigo'] == 'true'){
+            
+        ?>
 <!doctype html>
 <html lang="pt">
 
@@ -701,3 +707,9 @@
 </body>
 
 </html>
+
+<?php
+        }else{
+            header('Location: index.php');
+        }
+        ?>

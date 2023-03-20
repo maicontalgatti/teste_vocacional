@@ -193,7 +193,9 @@ if ($conn) {
 <body class="img_back">
   <?php
   include("db.php");
-
+  session_start();
+  $_SESSION['codigo'] = 'false';
+  session_destroy();
   ?> 
 
   <main role="main" class="container">
