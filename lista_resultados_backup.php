@@ -20,13 +20,12 @@
 
   <!-- Custom styles personal -->
   <link href="css/index.css" rel="stylesheet">
- 
 </head>
 
 <body class="img_back">
   <?php
   include("db.php");
- 
+
   ?>
   <main role="main" class="container" style="min-width: 1840px;">
 
@@ -34,7 +33,8 @@
     <div class="starter-template bloco_principal align_center">
 
       <h1 class="align_center">Bem vindo Professor!</h1>
- 
+
+      <button id="btn-cadastro">Cadastrar nova escola</button>
 <bR>
       <div class="table-responsive">
 
@@ -113,10 +113,6 @@ if ($query) {
         // Fecha a conexão com o banco de dados
         $conn->close();
 
-
-
-
-        
         ?>
 
 
