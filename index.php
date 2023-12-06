@@ -4,11 +4,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="teste vocacional">
+  <meta name="author" content="Maicon Talgatti">
+  <!-- 
+
+    Sr Programador,
+
+    Se você chegou até aqui, meus parabéns, não sei como esse código funcionou tanto tempo!
+    Provavelmente você veio corrigir um bug ou fazer um updgrade né? poisé..
+    Esse código foi contruído com um prazo apertadíssimo e sob pressão, então não me responsabilizo sobre
+    qualquer análise técnica ou julgamento na arquitetura de desenvolvimento hehe
+    eu poderia fazer esse sistema em laravel? sim! mas não deu tempo :(
+    Então desfrute da jornada nesse universo paralelo cheio de bits e _PHP_ onde eu passei variáveis em
+    POST com métodos e nomes duvidosos, inclusive fazer submit de Form com Javascript ta liberado viu! 
+    isso aqui é uma terra sem lei kkkk
+
+    Boa Sorte, não procure meu contato nas redes sociais (ou procure, isso vai ser engraçado XD kkk)
+    (Sério, se precisar de verdade me chame no instagram ou peça meu contato com algum professor aí)
+
+    Wake up Neo,
+    Follow the white rabbit.
+    The matrix has you.
+
+    Att. Maicon Talgatti.
+    
+   -->
+
   <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-  <title>Starter Template for Bootstrap</title>
+  <title>Teste vocacional</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -44,7 +68,7 @@
   <main role="main" class="container">
 
     <div class="starter-template bloco_principal align_center">
-      <form method="POST" action="teste.php">
+      <form method="POST" id='form_envio' action="teste.php">
         <h1 class="align_center">Nome:</h1>
         <input type="text" name='nome_aluno' class="align_center" required><br>
         <h1 class="align_center">Codigo escola:</h1>
@@ -76,8 +100,8 @@
          session_start();
         $_SESSION['codigo'] = 'true';
         ?>
-        window.location.href = "teste.php";
-        
+        // window.location.href = "teste.php";
+        document.getElementById("form_envio").submit();
       } else {
         alert("Código de escola incorreto");
       }

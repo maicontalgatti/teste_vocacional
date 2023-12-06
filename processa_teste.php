@@ -1,59 +1,67 @@
 <?php
+session_start();
+if ($_SESSION['codigo'] == 'true') {
 include('mostrarerros.php');
 include("db.php");
 
-$teste_1 = $_POST["teste_1"];
-$teste_2 = $_POST["teste_2"];
-$teste_3 = $_POST["teste_3"];
-$teste_4 = $_POST["teste_4"];
-$teste_5 = $_POST["teste_5"];
-$teste_6 = $_POST["teste_6"];
-$teste_7 = $_POST["teste_7"];
-$teste_8 = $_POST["teste_8"];
-$teste_9 = $_POST["teste_9"];
-$teste_10 = $_POST["teste_10"];
-$teste_11 = $_POST["teste_11"];
-$teste_12 = $_POST["teste_12"];
-$teste_13 = $_POST["teste_13"];
-$teste_14 = $_POST["teste_14"];
-$teste_15 = $_POST["teste_15"];
-$teste_16 = $_POST["teste_16"];
-$teste_17 = $_POST["teste_17"];
-$teste_18 = $_POST["teste_18"];
-$teste_19 = $_POST["teste_19"];
-$teste_20 = $_POST["teste_20"];
-$teste_21 = $_POST["teste_21"];
-$teste_22 = $_POST["teste_22"];
-$teste_23 = $_POST["teste_23"];
-$teste_24 = $_POST["teste_24"];
-$teste_25 = $_POST["teste_25"];
-$teste_26 = $_POST["teste_26"];
-$teste_27 = $_POST["teste_27"];
-$teste_28 = $_POST["teste_28"];
-$teste_29 = $_POST["teste_29"];
-$teste_30 = $_POST["teste_30"];
-$teste_31 = $_POST["teste_31"];
-$teste_32 = $_POST["teste_32"];
-$teste_33 = $_POST["teste_33"];
-$teste_34 = $_POST["teste_34"];
-$teste_35 = $_POST["teste_35"];
-$teste_36 = $_POST["teste_36"];
-$teste_37 = $_POST["teste_37"];
-$teste_38 = $_POST["teste_38"];
-$teste_39 = $_POST["teste_39"];
-$teste_40 = $_POST["teste_40"];
-$teste_41 = $_POST["teste_41"];
-$teste_42 = $_POST["teste_42"];
-$teste_43 = $_POST["teste_43"];
-$teste_44 = $_POST["teste_44"];
-$teste_45 = $_POST["teste_45"];
-$teste_46 = $_POST["teste_46"];
-$teste_47 = $_POST["teste_47"];
-$teste_48 = $_POST["teste_48"];
-$nome_aluno = $_POST["nome_aluno"];
-$celular = $_POST["celular"];
-$email = $_POST["email"];
-$codigoescola = $_POST["codigo"];
+$teste_1 = $_SESSION['teste_1_tv'];
+$teste_2 = $_SESSION['teste_2_tv'];
+$teste_3 = $_SESSION['teste_3_tv'];
+$teste_4 = $_SESSION['teste_4_tv'];
+$teste_5 = $_SESSION['teste_5_tv'];
+$teste_6 = $_SESSION['teste_6_tv'];
+$teste_7 = $_SESSION['teste_7_tv'];
+$teste_8 = $_SESSION['teste_8_tv'];
+$teste_9 = $_SESSION['teste_9_tv'];
+$teste_10 = $_SESSION['teste_10_tv'];
+$teste_11 = $_SESSION['teste_11_tv'];
+$teste_12 = $_SESSION['teste_12_tv'];
+$teste_13 = $_SESSION['teste_13_tv'];
+$teste_14 = $_SESSION['teste_14_tv'];
+$teste_15 = $_SESSION['teste_15_tv'];
+$teste_16 = $_SESSION['teste_16_tv'];
+$teste_17 = $_SESSION['teste_17_tv'];
+$teste_18 = $_SESSION['teste_18_tv'];
+$teste_19 = $_SESSION['teste_19_tv'];
+$teste_20 = $_SESSION['teste_20_tv'];
+$teste_21 = $_SESSION['teste_21_tv'];
+$teste_22 = $_SESSION['teste_22_tv'];
+$teste_23 = $_SESSION['teste_23_tv'];
+$teste_24 = $_SESSION['teste_24_tv'];
+$teste_25 = $_SESSION['teste_25_tv'];
+$teste_26 = $_SESSION['teste_26_tv'];
+$teste_27 = $_SESSION['teste_27_tv'];
+$teste_28 = $_SESSION['teste_28_tv'];
+$teste_29 = $_SESSION['teste_29_tv'];
+$teste_30 = $_SESSION['teste_30_tv'];
+$teste_31 = $_SESSION['teste_31_tv'];
+$teste_32 = $_SESSION['teste_32_tv'];
+$teste_33 = $_SESSION['teste_33_tv'];
+$teste_34 = $_SESSION['teste_34_tv'];
+$teste_35 = $_SESSION['teste_35_tv'];
+$teste_36 = $_SESSION['teste_36_tv'];
+$teste_37 = $_SESSION['teste_37_tv'];
+$teste_38 = $_SESSION['teste_38_tv'];
+$teste_39 = $_SESSION['teste_39_tv'];
+$teste_40 = $_SESSION['teste_40_tv'];
+$teste_41 = $_SESSION['teste_41_tv'];
+$teste_42 = $_SESSION['teste_42_tv'];
+$teste_43 = $_SESSION['teste_43_tv'];
+$teste_44 = $_SESSION['teste_44_tv'];
+$teste_45 = $_SESSION['teste_45_tv'];
+$teste_46 = $_SESSION['teste_46_tv'];
+$teste_47 = $_SESSION['teste_47_tv'];
+$teste_48 = $_SESSION['teste_48_tv'];
+$nome_aluno = $_SESSION['nome_aluno_tv'];
+$celular = $_SESSION['celular_tv'];
+$email = $_SESSION['email_tv'];
+$codigoescola = $_SESSION['codigoescola_tv'];
+//
+$preferencia_1 = $_SESSION['preferencia_1_tv']; 
+$preferencia_2 = $_SESSION['preferencia_2_tv']; 
+$preferencia_3 = $_SESSION['preferencia_3_tv']; 
+$preferencia_4 = $_SESSION['preferencia_4_tv']; 
+$preferencia_5 = $_POST['preferencia_5'];
 
 
 // R - Realista
@@ -122,15 +130,7 @@ $valor_c = $valor_c + $teste_36;
 $valor_c = $valor_c + $teste_42;
 $valor_c = $valor_c + $teste_48;
 
-
-// echo '$valor_r -'.$valor_r. "<br>" ;
-// echo '$valor_i -'.$valor_i. "<br>" ;
-// echo '$valor_a -'.$valor_a. "<br>" ;
-// echo '$valor_s -'.$valor_s. "<br>" ;
-// echo '$valor_e -'.$valor_e. "<br>" ;
-// echo '$valor_c -'.$valor_c. "<br>" ;
  
-
 $array = array(
 	array( 'nome' => 'valor_r',	'valor' => $valor_r, 'nome_completo' => 'Realista' ),
 	array( 'nome' => 'valor_i',	'valor' => $valor_i, 'nome_completo' => 'Investigativo' ),
@@ -159,7 +159,7 @@ usort($array, 'cmp');
     // mysqli_error($conn);
 
 if ($conn) {
-    $sql = "INSERT INTO teste_tv (name_aluno, email, celular, realista, investigativo, artitico, social, empreendedor, convencional,codigoescola) VALUES('".$nome_aluno."', '".$email."', ".$celular.",".$valor_r.", ".$valor_i.", ".$valor_a.", ".$valor_s.", ".$valor_e.", ".$valor_c.", '".$codigoescola."')";
+    $sql = "INSERT INTO teste_tv (name_aluno, email, celular, realista, investigativo, artitico, social, empreendedor, convencional,codigoescola, preferencia_1, preferencia_2, preferencia_3, preferencia_4, preferencia_5) VALUES('".$nome_aluno."', '".$email."', ".$celular.",".$valor_r.", ".$valor_i.", ".$valor_a.", ".$valor_s.", ".$valor_e.", ".$valor_c.", '".$codigoescola."', '".$preferencia_1."', '".$preferencia_2."', '".$preferencia_3."', '".$preferencia_4."', '".$preferencia_5."')";
     $query = mysqli_query($conn, $sql);
 } else {
     echo "errou <br>";
@@ -225,7 +225,11 @@ if ($conn) {
   <script src="../../assets/js/vendor/popper.min.js"></script>
   <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
-
+<?php
+} else {
+  header('Location: index.php');
+}
+?>
 </html>
 
 

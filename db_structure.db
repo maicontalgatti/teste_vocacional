@@ -3,47 +3,44 @@ CREATE DATABASE 'teste_vocacional' /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLAT
 
 -- teste_vocacional.cidade_tv definition
 
-CREATE TABLE 'cidade_tv' (
-  'id' int NOT NULL AUTO_INCREMENT,
-  'nome' varchar(100) DEFAULT NULL,
-  'cidade' varchar(100) DEFAULT NULL,
-  'estado' varchar(100) DEFAULT NULL,
-  UNIQUE KEY 'id' ('id')
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `cidade_tv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `cidade` varchar(100) DEFAULT NULL,
+  `estado` varchar(100) DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+);
 
--- teste_vocacional.escola_tv definition
 
-CREATE TABLE 'escola_tv' (
-  'id' int NOT NULL AUTO_INCREMENT,
-  'nome' varchar(100) DEFAULT NULL,
-  'cidade' varchar(100) DEFAULT NULL,
-  'estado' varchar(100) DEFAULT NULL,
-  'codigo' varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  UNIQUE KEY 'id' ('id')
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `escola_tv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) DEFAULT NULL,
+  `cidade` varchar(100) DEFAULT NULL,
+  `estado` varchar(100) DEFAULT NULL,
+  `codigo` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+);
 
--- teste_vocacional.teste_tv definition
 
-CREATE TABLE 'teste_tv' (
-  'id' int NOT NULL AUTO_INCREMENT,
-  'name_aluno' varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  'email' varchar(100) DEFAULT NULL,
-  'celular' varchar(12) DEFAULT NULL,
-  'realista' int DEFAULT NULL,
-  'investigativo' int DEFAULT NULL,
-  'artitico' int DEFAULT NULL,
-  'social' int DEFAULT NULL,
-  'empreendedor' int DEFAULT NULL,
-  'convencional' int DEFAULT NULL,
-  'codigoescola' varchar(100) DEFAULT NULL,
-  UNIQUE KEY 'id' ('id')
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `teste_tv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name_aluno` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `celular` varchar(12) DEFAULT NULL,
+  `realista` int DEFAULT NULL,
+  `investigativo` int DEFAULT NULL,
+  `artitico` int DEFAULT NULL,
+  `social` int DEFAULT NULL,
+  `empreendedor` int DEFAULT NULL,
+  `convencional` int DEFAULT NULL,
+  `codigoescola` varchar(100) DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+);
+ 
 
--- teste_vocacional.user_tv definition
-
-CREATE TABLE 'user_tv' (
-  'id' int NOT NULL AUTO_INCREMENT,
-  'nome' varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  'senha' varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  UNIQUE KEY 'id' ('id')
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `user_tv` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `senha` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+);

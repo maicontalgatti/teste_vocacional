@@ -39,8 +39,32 @@
       <div>
 
         <?php
+
+  
+// Query para obter a listagem de cursos
+$sql = "SELECT id, nome FROM cursos";
+$query = mysqli_query($conn, $sql);
+
+// Verificar se a consulta retornou resultados
+if ($query) {
+    $cursos = array();
+
+    while ($row = mysqli_fetch_assoc($query)) {
+        $id = $row['id'];
+        $nome = $row['nome'];
+        $cursos[$id] = $nome;
+    }
+
+    // Exemplo de como acessar um curso pelo ID
+    $cursoId = 5;
+    echo "Nome do curso com ID $cursoId: " . $cursos[$cursoId];
+} else {
+    echo "Erro na consulta: " . mysqli_error($conn);
+}
+ 
+
         // Consulta SQL para selecionar os dados 
-        $sql = "SELECT name_aluno, email, celular, realista, investigativo, artitico, social, empreendedor, convencional FROM teste_vocacional.teste_tv where codigoescola = '".$_GET['codigo']."'"; 
+        $sql = "SELECT name_aluno, email, celular, realista, investigativo, artitico, social, empreendedor, convencional, preferencia_1, preferencia_2, preferencia_3, preferencia_4, preferencia_5 FROM teste_tv where codigoescola = '".$_GET['codigo']."'"; 
             
         $result = $conn->query($sql);
 
@@ -57,6 +81,11 @@
           echo "<th>social</th>";
           echo "<th>empreendedor</th>";
           echo "<th>convencional</th>";
+          echo "<th>Preferência 1</th>";
+          echo "<th>Preferência 2</th>";
+          echo "<th>Preferência 3</th>";
+          echo "<th>Preferência 4</th>";
+          echo "<th>Preferência 5</th>";
           echo "</tr>";
           // Loop para percorrer os resultados e exibi-los na tabela
           while ($row = $result->fetch_assoc()) {
@@ -70,6 +99,11 @@
           echo "<th>".$row['social']."</th>";
           echo "<th>".$row['empreendedor']."</th>";
           echo "<th>".$row['convencional']."</th>"; 
+          echo "<th>". $cursos[$row['preferencia_1']]."</th>"; 
+          echo "<th>". $cursos[$row['preferencia_2']]."</th>"; 
+          echo "<th>". $cursos[$row['preferencia_3']]."</th>"; 
+          echo "<th>". $cursos[$row['preferencia_4']]."</th>"; 
+          echo "<th>". $cursos[$row['preferencia_5']]."</th>"; 
             echo "</tr>";
           }
           echo "</table>";

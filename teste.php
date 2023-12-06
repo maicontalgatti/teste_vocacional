@@ -50,7 +50,7 @@
                 Assinale apenas uma resposta por frase, e não pare muito tempo para pensar em cada resposta; a sua primeira impressão é o mais importante. Lembre-se
                 de não deixar nenhum item em branco..</p>
 
-            <form method="post" action="processa_teste.php">
+            <form method="post" action="pergunta_1.php">
                 <table id="tabela_teste" style="width:80%">
                     <tr>
                         <td> 1. Trabalhar com ferramentas ou máquinas.</td>
